@@ -1,3 +1,7 @@
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from youtube_fetch import fetch_youtube_comments
 
 results = fetch_youtube_comments("mechanical keyboard review", max_videos=2, max_comments_per_video=5)
